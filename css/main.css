@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.wrapper {
+  font-family: "Lato", sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #F5F5F5;
+  min-height: 600px;
+  border-radius: 20px;
+  overflow: hidden; }
+
+.information {
+  display: flex;
+  padding: 10px 50px; }
+  .information p {
+    padding-right: 30px; }
+
+h1 {
+  text-align: center;
+  font-weight: 300; }
+
+form {
+  margin: 0 50px;
+  text-align: center; }
+  form input {
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 17px;
+    padding: 0 20px;
+    float: left; }
+  form button {
+    height: 44px;
+    width: 56px;
+    margin: 0;
+    background: #01579B;
+    border: none;
+    color: #fff; }
+
+ul {
+  padding: 30px 0 70px;
+  border-collapse: collapse; }
+  ul li {
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    max-width: 500px;
+    background-color: #FAFAFA;
+    justify-content: space-between;
+    border: 1px solid #BDBDBD;
+    cursor: pointer;
+    transition: 0.2s; }
+    ul li p {
+      margin: 0;
+      font-size: 20px;
+      padding: 10px 10px 10px 40px; }
+    ul li .button-delete {
+      background: #03A9F4;
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border: none; }
+    ul li .button-delete::before {
+      content: "✕";
+      font-size: 20px;
+      position: absolute;
+      top: 6px;
+      left: 14px; }
+  ul li:hover {
+    background: #EEEEEE; }
+  ul p.checked {
+    text-decoration: line-through;
+    position: relative; }
+  ul p.checked::before {
+    content: "✓";
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    color: #1B5E20; }
+  ul .delete-task {
+    display: none; }
+
+/*# sourceMappingURL=main.css.map */

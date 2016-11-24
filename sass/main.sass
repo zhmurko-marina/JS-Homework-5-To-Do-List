@@ -1,0 +1,82 @@
+.wrapper
+  font-family: 'Lato', sans-serif
+  max-width: 600px
+  margin: 20px auto
+  background-color: #F5F5F5
+  min-height: 600px
+  border-radius: 20px
+  overflow: hidden
+
+.information
+  display: flex
+  padding: 10px 50px
+  p
+    padding-right: 30px
+
+h1
+  text-align: center
+  font-weight: 300
+
+form
+  margin: 0 50px
+  text-align: center
+  input
+    width: 400px
+    height: 40px
+    margin: 0 auto
+    font-size: 17px
+    padding: 0 20px
+    float: left
+  button
+    height: 44px
+    width: 56px
+    margin: 0
+    background: #01579B
+    border: none
+    color: #fff
+
+ul
+  padding: 30px 0 70px
+  border-collapse: collapse
+  li
+    list-style: none
+    margin: 0 auto
+    display: flex
+    max-width: 500px
+    background-color: #FAFAFA
+    justify-content: space-between
+    border: 1px solid #BDBDBD
+    cursor: pointer
+    transition: 0.2s
+    p
+      margin: 0
+      font-size: 20px
+      padding: 10px 10px 10px 40px
+    .button-delete
+      background: #03A9F4
+      position: relative
+      width: 44px
+      height: 44px
+      border: none
+    .button-delete::before
+      content: '\2715'
+      font-size: 20px
+      position: absolute
+      top: 6px
+      left: 14px
+  li:hover
+    background: #EEEEEE
+  p.checked
+    text-decoration: line-through
+    position: relative
+  p.checked::before
+    content: '\2713'
+    font-size: 25px
+    width: 25px
+    height: 25px
+    position: absolute
+    left: 10px
+    top: 4px
+    color: #1B5E20
+  .delete-task
+    display: none
